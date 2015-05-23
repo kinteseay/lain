@@ -37,7 +37,7 @@ local project_path        = debug.getinfo(1, 'S').source:match[[^@(.*/).*$]]
 local localizations_path  = project_path .. 'localizations/'
 local icon_path           = project_path .. 'icons/'
 local api_url             = 'http://weather.yahooapis.com/forecastrss'
-local units_set           = '?u=c&w=' -- Default is Celsius
+local units_set           = '?u=f&w=' -- Default is Fahrenhite
 local language            = string.match(os.getenv("LANG"), "(%S*$*)[.]") or "en_US" -- if LANG is not set
 local weather_data        = nil
 local notification        = nil
